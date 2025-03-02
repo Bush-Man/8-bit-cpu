@@ -232,4 +232,75 @@
     <wire from="(700,390)" to="(750,390)"/>
     <wire from="(700,480)" to="(760,480)"/>
   </circuit>
+  <circuit name="Flipper">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Flipper"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="none" height="86" stroke="#000000" width="68" x="330" y="145"/>
+      <circ-anchor facing="east" x="400" y="160"/>
+      <circ-port dir="in" pin="210,180" x="330" y="180"/>
+      <circ-port dir="in" pin="210,270" x="330" y="200"/>
+      <circ-port dir="in" pin="210,370" x="330" y="220"/>
+      <circ-port dir="in" pin="210,460" x="360" y="230"/>
+      <circ-port dir="in" pin="210,80" x="330" y="160"/>
+      <circ-port dir="out" pin="440,100" x="400" y="160"/>
+      <circ-port dir="out" pin="440,200" x="400" y="180"/>
+      <circ-port dir="out" pin="440,290" x="400" y="200"/>
+      <circ-port dir="out" pin="440,390" x="400" y="220"/>
+    </appear>
+    <comp lib="0" loc="(210,180)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(210,270)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(210,370)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(210,460)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(210,80)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(440,100)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(440,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(440,290)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(440,390)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(440,100)" name="XOR Gate"/>
+    <comp lib="1" loc="(440,200)" name="XOR Gate"/>
+    <comp lib="1" loc="(440,290)" name="XOR Gate"/>
+    <comp lib="1" loc="(440,390)" name="XOR Gate"/>
+    <wire from="(210,180)" to="(380,180)"/>
+    <wire from="(210,270)" to="(380,270)"/>
+    <wire from="(210,370)" to="(380,370)"/>
+    <wire from="(210,460)" to="(320,460)"/>
+    <wire from="(210,80)" to="(380,80)"/>
+    <wire from="(320,120)" to="(320,220)"/>
+    <wire from="(320,120)" to="(380,120)"/>
+    <wire from="(320,220)" to="(320,310)"/>
+    <wire from="(320,220)" to="(380,220)"/>
+    <wire from="(320,310)" to="(320,410)"/>
+    <wire from="(320,310)" to="(380,310)"/>
+    <wire from="(320,410)" to="(320,460)"/>
+    <wire from="(320,410)" to="(380,410)"/>
+  </circuit>
 </project>
