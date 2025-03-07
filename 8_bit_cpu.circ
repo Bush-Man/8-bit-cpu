@@ -416,4 +416,62 @@
     <wire from="(750,340)" to="(850,340)"/>
     <wire from="(870,300)" to="(930,300)"/>
   </circuit>
+  <circuit name="InbuiltAdder">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="InbuiltAdder"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(170,220)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(210,270)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(260,110)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(330,270)" name="Bit Extender">
+      <a name="in_width" val="1"/>
+      <a name="out_width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(650,120)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(660,230)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(440,150)" name="XOR Gate">
+      <a name="size" val="30"/>
+      <a name="width" val="8"/>
+      <a name="xor" val="odd"/>
+    </comp>
+    <comp lib="3" loc="(570,120)" name="Adder"/>
+    <wire from="(170,220)" to="(260,220)"/>
+    <wire from="(210,270)" to="(270,270)"/>
+    <wire from="(260,110)" to="(530,110)"/>
+    <wire from="(260,140)" to="(260,220)"/>
+    <wire from="(260,140)" to="(400,140)"/>
+    <wire from="(270,270)" to="(270,320)"/>
+    <wire from="(270,270)" to="(290,270)"/>
+    <wire from="(270,320)" to="(490,320)"/>
+    <wire from="(330,270)" to="(350,270)"/>
+    <wire from="(350,160)" to="(350,270)"/>
+    <wire from="(350,160)" to="(400,160)"/>
+    <wire from="(440,150)" to="(460,150)"/>
+    <wire from="(460,130)" to="(460,150)"/>
+    <wire from="(460,130)" to="(530,130)"/>
+    <wire from="(490,80)" to="(490,320)"/>
+    <wire from="(490,80)" to="(550,80)"/>
+    <wire from="(550,140)" to="(550,230)"/>
+    <wire from="(550,230)" to="(660,230)"/>
+    <wire from="(550,80)" to="(550,100)"/>
+    <wire from="(570,120)" to="(650,120)"/>
+  </circuit>
 </project>
